@@ -21,4 +21,9 @@
         android:name="com.example.halfsubmission.ui.finished.FinishedFragment"
         android:label="Finished"
         tools:layout="@layout/fragment_finished" />
+    <fragment
+        android:id="@+id/navigation_Setting"
+        android:name="com.example.halfsubmission.ui.Setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>

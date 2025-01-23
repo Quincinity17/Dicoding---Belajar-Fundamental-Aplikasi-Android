@@ -46,28 +46,46 @@ android {
 }
 
 dependencies {
-
+    // Core Android Libraries
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
+
+    // Lifecycle Components
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    // Navigation Components
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
 
-    implementation (libs.material.v170)
+    // Activity Components
     implementation(libs.androidx.activity)
+
+    // Material Design Libraries
+    implementation(libs.material.v170)
+
+    // Networking Libraries
+    implementation(libs.android.async.http)
+    implementation(libs.retrofit2.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
+    // Image Loading Libraries
+    implementation(libs.glide)
+    implementation(libs.shimmer)
+    implementation(libs.picasso)
+
+    // DataStore and Coroutines
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
+
+    // Testing Libraries
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation (libs.android.async.http)
-    implementation (libs.glide)
-    implementation (libs.retrofit2.retrofit)
-    implementation (libs.converter.gson)
-    implementation (libs.logging.interceptor)
-    implementation (libs.shimmer)
-    implementation (libs.picasso)
-
 }
+
+

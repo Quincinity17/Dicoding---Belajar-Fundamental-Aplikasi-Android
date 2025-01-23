@@ -61,6 +61,7 @@ class EventDetailActivity : AppCompatActivity() {
             .into(binding.imageViewLogo)
 
         with(binding) {
+            textViewSource.text = intent.getStringExtra("SOURCE_FRAGMENT")
             textViewName.text = eventDetail.name
             textViewDescription.text = HtmlCompat.fromHtml(
                 eventDetail.description ?: "",
